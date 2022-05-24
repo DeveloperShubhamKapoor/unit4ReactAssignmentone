@@ -1,5 +1,36 @@
 .App {
   text-align: center;
+  width: 90%;
+  height: 50px;
+  background-color: #24252a;
+  color: white;
+  border: 1px solid white;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+}
+.Logobakery{
+  font-weight: bold;
+  margin-left: 50px;
+}
+.Linksinfo{
+  text-align: center;
+  gap: 35px;
+  margin-left: 25%;
+  display: flex;
+  margin-right: 20px;
+}
+.contactButton{
+    border: none;
+    font-size: 18px;
+    margin-left: 25%;
+    border-radius: 25px;
+    color: white;
+    background-color: #028ba8;
+    
+    margin-bottom: 18px;
+    padding: 0px 20px;
 }
 
 .App-logo {

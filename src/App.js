@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Button } from './components/Button';
+import { Links } from './components/Links';
+import { Logo } from './components/Logo';
 
 function App() {
+
+  let links = [{ser:"Services"},{ser:"Project"},{ser:"About"}]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Logobakery">
+        <Logo/>
+        </div>
+        <div className="Linksinfo">
+              {links.map((info)=>(
+                <div className='setInfoLink'>
+                <Links {...info} />
+                </div>
+            ))} 
+        </div>
+        <Button/>
+      
     </div>
   );
 }
